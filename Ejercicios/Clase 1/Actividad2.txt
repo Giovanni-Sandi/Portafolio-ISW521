@@ -1,0 +1,22 @@
+A) Sitio de información pública - Internet
+Porque cualquier vecino debe poder entrar desde cualquier lugar.
+Es un sistema público y accesible para todos.
+
+B) Sistema de planillas para RRHH - Intranet
+Porque contiene información privada de empleados y salarios.
+Solo trabajadores autorizados de la municipalidad deberían acceder.
+
+C) Portal para constructoras - Extranet
+Porque lo usarán usuarios externos, pero con acceso limitado y controlado.
+Las empresas constructoras podrán revisar permisos sin entrar a sistemas internos.
+
+¿Cuál de los tres sistemas requiere más inversión en seguridad? ¿Por qué?
+
+El sistema de RRHH porque maneja datos sensibles como salarios, información personal y documentos internos.
+Si alguien accede sin permiso, podría causar problemas legales y de privacidad.
+
+¿Podría un mismo servidor físico alojar los tres sistemas de forma segura? ¿Cómo lo lograrías conceptualmente?
+
+Sí, sí se puede.
+Se lograría separando los sistemas de forma lógica, por ejemplo usando máquinas virtuales, contenedores o redes separadas.
+Además, se usarían permisos, firewalls y controles de acceso distintos para cada sistema.

@@ -1,0 +1,11 @@
+¿Es correcto lo que dijo el Rector? ¿Por qué la distinción del director de TI es técnicamente importante?
+
+Si, es correcto, básicamente el rector menciono de ponerlo en internet dando a entender que el sistema estará en linea, pero el internet y la web no son lo mismo, ósea la web funciona gracias a internet. Pero es importante decidir si el sistema sera publico o privado solo para estudiantes y profesores
+
+Si usan HTTP sobre Internet pero solo para usuarios internos de la UTN, ¿están usando Internet o la WWW, o ambos?
+
+Se usan ambos ya que el internet usa la red para comunicarse y WWW porque usan HTTP que es el protocolo de las paginas web, es decir que aunque solo los usuarios de la universidad puedan entrar sigue siendo una pagina web
+
+¿Qué organismo (W3C o IETF) define los estándares más relevantes para este sistema de notas? Justifica.
+
+IETF crea reglas para que internet funcione como HTTP y W3C crea reglas para las paginas Web, como HTML. Básicamente es mas importante IETF porque es la que se encarga de que se de la comunicación y la seguridad
