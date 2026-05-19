@@ -1,0 +1,34 @@
+Parte A
+Segun la IA se identifican los siguientes componentes
+
+Protocolo: https
+Indica cómo se comunican el navegador y el servidor de forma segura.
+
+Subdominio: api
+Es una sección específica del sitio de GitHub para APIs.
+
+Dominio: github.com
+Nombre principal del sitio web.
+
+Puerto: 443
+Puerto usado normalmente por HTTPS.
+
+Ruta (path): /repos/bryancs/isw521/issues
+Indica el recurso específico que se quiere consultar.
+
+Parámetros (query): state=open&labels=semana1
+Sirven para filtrar información.
+
+Fragmento o ancla: #comentarios
+Lleva a una sección específica de la página.
+
+Parte B - Clean URLs
+
+Página del curso ISW-521, cuatrimestre 2026-II, sede San Carlos:
+https://utn.ac.cr/cursos/isw-521/2026-2/san-carlos
+
+Perfil del estudiante con carné 2022-0001:
+https://utn.ac.cr/estudiantes/2022-0001
+
+Lista de materiales de la semana 3 del curso ISW-521:
+https://utn.ac.cr/cursos/isw-521/materiales/semana-3
