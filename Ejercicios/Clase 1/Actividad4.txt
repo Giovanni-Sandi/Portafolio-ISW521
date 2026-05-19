@@ -1,0 +1,61 @@
+Para cada URL identifica el TLD, el SLD y el subdominio (si lo hay). ¿Cuáles son ccTLD y cuáles gTLD?
+https://campus.utn.ac.cr
+ccTLD: .cr
+TLD secundario: .ac
+SLD: utn
+Subdominio: campus
+
+En este caso .cr es un ccTLD porque pertenece a Costa Rica.
+
+https://www.netflix.com
+gTLD: .com
+SLD: netflix
+Subdominio: www
+
+.com es un gTLD porque es un dominio genérico usado internacionalmente.
+
+https://api.github.io
+gTLD: .io
+SLD: github
+Subdominio: api
+
+.io funciona como un gTLD, muy usado en tecnología y desarrollo.
+
+https://app.maravilla.co.cr
+ccTLD: .cr
+TLD secundario: .co
+SLD: maravilla
+Subdominio: app
+
+.cr es un ccTLD de Costa Rica.
+
+¿Quién administra el TLD .cr? ¿Y el .com? ¿Necesitás ICANN para registrar un subdominio?
+
+El dominio .cr, que pertenece a Costa Rica, es administrado por NIC Costa Rica, entidad encargada de gestionar los dominios nacionales del país.
+
+El dominio .com es administrado por la empresa Verisign, bajo supervisión de ICANN, que es la organización internacional que coordina los nombres de dominio en Internet.
+
+No se necesita ICANN para crear un subdominio. Los subdominios los puede crear directamente el dueño del dominio principal. Por ejemplo, si la UTN ya posee utn.ac.cr, puede crear campus.utn.ac.cr o egresados.utn.ac.cr sin pagar un nuevo dominio.
+
+Si la UTN quisiera crear un portal de egresados en egresados.utn.ac.cr, ¿necesita pagar a un registrar? ¿Por qué?
+
+No. La UTN no necesitaría pagar otro registro porque egresados.utn.ac.cr sería solamente un subdominio del dominio principal utn.ac.cr, el cual ya pertenece a la universidad.
+
+¿Qué diferencia hay entre un registro A y un registro CNAME en DNS?
+
+Un registro A conecta un dominio directamente con una dirección IP.
+
+Ejemplo:
+
+netflix.com 192.168.1.1
+
+En cambio, un registro CNAME funciona como un alias y hace que un dominio apunte hacia otro dominio.
+
+Ejemplo:
+
+www.netflix.com netflix.com
+
+La diferencia principal es que:
+
+El registro A apunta a una IP.
+El registro CNAME apunta a otro nombre de dominio.
