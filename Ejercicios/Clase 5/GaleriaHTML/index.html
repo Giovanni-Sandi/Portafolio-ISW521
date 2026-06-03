@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Galería Multimedia</title>
+</head>
+
+<body>
+
+    <h1>Galería Multimedia del Curso</h1>
+
+    <h2>Imagen Principal</h2>
+
+    <picture>
+
+        <source srcset="img/img.webp" type="image/webp">
+
+        <source srcset="img/img1.jpg" type="image/jpeg">
+
+        <img src="img/img1.jpg" alt="Imagen del curso" width="400">
+
+    </picture>
+
+    <h2>Video</h2>
+
+    <video controls poster="img/img1.jpg" width="500">
+
+        <source src="video/video1.mp4" type="video/mp4">
+
+        Tu navegador no soporta video.
+
+    </video>
+
+    <h2>Audio</h2>
+
+    <audio controls>
+
+        <source src="audio/audio1.mp3" type="audio/mpeg">
+
+        Tu navegador no soporta audio.
+
+    </audio>
+
+    <h2>Ubicación</h2>
+
+    <iframe
+        src="https://www.google.com/maps?q=San%20Carlos&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="600"
+        height="450"
+        sandbox="allow-scripts allow-same-origin"
+        loading="lazy">
+    </iframe>
+
+</body>
+
+</html>
