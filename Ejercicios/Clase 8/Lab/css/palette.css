@@ -1,0 +1,387 @@
+/* =========================================
+   PALETTE.CSS
+   Auto Style CR
+========================================= */
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.palette{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:1rem;
+}
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.palette header{
+
+    flex-basis:100%;
+
+    text-align:center;
+
+    margin-bottom:.5rem;
+}
+
+.palette h2{
+
+    margin-bottom:.35rem;
+}
+
+.palette p{
+
+    max-width:650px;
+
+    margin-inline:auto;
+}
+
+/* =========================================
+   SWATCHES
+========================================= */
+
+.paint-swatch{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border:3px solid transparent;
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+    flex-shrink:0;
+}
+
+/* =========================================
+   BRILLO AUTOMOTRIZ
+========================================= */
+
+.paint-swatch::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.65),
+            transparent 45%
+        );
+}
+
+/* =========================================
+   TOOLTIP
+========================================= */
+
+.paint-swatch::after{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-34px;
+
+    transform:translateX(-50%);
+
+    white-space:nowrap;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    color:var(--text-secondary);
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.3s ease;
+}
+
+.paint-swatch:hover::after{
+
+    opacity:1;
+}
+
+/* =========================================
+   HOVER
+========================================= */
+
+.paint-swatch:hover{
+
+    transform:
+        translateY(-6px)
+        scale(1.05);
+
+    box-shadow:var(--shadow-md);
+}
+
+/* =========================================
+   ROJO RACING
+========================================= */
+
+.red{
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #ff7d8a,
+            #cc2233
+        );
+}
+
+.red::after{
+
+    content:"Rojo Racing";
+}
+
+/* =========================================
+   NEGRO ÓNIX
+========================================= */
+
+.black{
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #555,
+            #111
+        );
+}
+
+.black::after{
+
+    content:"Negro Ónix";
+}
+
+/* =========================================
+   BLANCO PERLA
+========================================= */
+
+.white{
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #ffffff,
+            #d8d8d8
+        );
+}
+
+.white::after{
+
+    content:"Blanco Perla";
+}
+
+/* =========================================
+   AZUL ELÉCTRICO
+========================================= */
+
+.blue{
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #67b0ff,
+            #1a4a8a
+        );
+}
+
+.blue::after{
+
+    content:"Azul Eléctrico";
+}
+
+/* =========================================
+   VERDE ESMERALDA
+========================================= */
+
+.green{
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #67e08b,
+            #1a6a2a
+        );
+}
+
+.green::after{
+
+    content:"Verde Esmeralda";
+}
+
+/* =========================================
+   NARANJA SUNSET
+========================================= */
+
+.orange{
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #ffc270,
+            #cc5500
+        );
+}
+
+.orange::after{
+
+    content:"Naranja Sunset";
+}
+
+/* =========================================
+   ANIMACIÓN DEL LABORATORIO
+========================================= */
+
+@keyframes floatIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(25px)
+            scale(.9);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+/* =========================================
+   APARICIÓN ESCALONADA
+========================================= */
+
+.paint-swatch{
+
+    opacity:0;
+
+    animation:
+        floatIn .6s ease forwards;
+}
+
+.paint-swatch:nth-of-type(1){
+
+    animation-delay:.05s;
+}
+
+.paint-swatch:nth-of-type(2){
+
+    animation-delay:.15s;
+}
+
+.paint-swatch:nth-of-type(3){
+
+    animation-delay:.25s;
+}
+
+.paint-swatch:nth-of-type(4){
+
+    animation-delay:.35s;
+}
+
+.paint-swatch:nth-of-type(5){
+
+    animation-delay:.45s;
+}
+
+.paint-swatch:nth-of-type(6){
+
+    animation-delay:.55s;
+}
+
+/* =========================================
+   COLOR SELECCIONADO
+========================================= */
+
+#color-red:checked
+~ .showroom-grid
+.paint-swatch.red,
+
+#color-black:checked
+~ .showroom-grid
+.paint-swatch.black,
+
+#color-white:checked
+~ .showroom-grid
+.paint-swatch.white,
+
+#color-blue:checked
+~ .showroom-grid
+.paint-swatch.blue,
+
+#color-green:checked
+~ .showroom-grid
+.paint-swatch.green,
+
+#color-orange:checked
+~ .showroom-grid
+.paint-swatch.orange{
+
+    transform:scale(1.15);
+
+    border-color:white;
+
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,.15),
+        var(--shadow-md);
+}
+
+/* =========================================
+   LIGHT MODE
+========================================= */
+
+#theme-light:checked
+~ .showroom-grid
+.paint-swatch{
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.08);
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce){
+
+    .paint-swatch{
+
+        animation:none;
+
+        transition:none;
+    }
+}

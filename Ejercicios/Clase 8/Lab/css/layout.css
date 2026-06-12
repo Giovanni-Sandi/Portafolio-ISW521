@@ -1,0 +1,645 @@
+/* =========================================
+LAYOUT.CSS
+Auto Style CR
+========================================= */
+
+/* =========================================
+RESET
+========================================= */
+
+*,
+*::before,
+*::after{
+
+
+box-sizing:border-box;
+
+margin:0;
+
+padding:0;
+
+
+}
+
+img{
+
+
+display:block;
+
+max-width:100%;
+
+
+}
+
+ul{
+
+
+list-style:none;
+
+
+}
+
+body{
+
+
+min-height:100vh;
+
+
+}
+
+/* =========================================
+GRID PRINCIPAL
+========================================= */
+
+.showroom-grid{
+
+
+width:min(1800px,95%);
+
+margin-inline:auto;
+
+padding:1.5rem;
+
+display:grid;
+
+gap:1.25rem;
+
+min-height:100vh;
+
+grid-template-columns:
+
+    minmax(260px,1fr)
+
+    minmax(650px,2.5fr)
+
+    minmax(280px,1fr);
+
+grid-template-rows:
+
+    auto
+
+    1fr
+
+    auto;
+
+grid-template-areas:
+
+    "header header header"
+
+    "sidebar vehicle quote"
+
+    "palette palette palette";
+
+
+}
+
+/* =========================================
+HEADER
+========================================= */
+
+.main-header{
+
+
+grid-area:header;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:2rem;
+
+padding:1.5rem;
+
+border-radius:28px;
+
+
+}
+
+/* =========================================
+BRAND
+========================================= */
+
+.brand{
+
+
+display:flex;
+
+align-items:center;
+
+gap:1rem;
+
+
+}
+
+.brand-mark{
+
+
+width:72px;
+
+height:72px;
+
+border-radius:50%;
+
+display:grid;
+
+place-items:center;
+
+font-size:1.5rem;
+
+font-weight:800;
+
+
+}
+
+.brand h1{
+
+
+font-size:clamp(2rem,3vw,3.5rem);
+
+
+}
+
+.brand p{
+
+
+margin-top:.25rem;
+
+
+}
+
+/* =========================================
+BADGES
+========================================= */
+
+.header-badges{
+
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:flex-end;
+
+gap:.75rem;
+
+
+}
+
+.header-badges span{
+
+
+padding:.75rem 1rem;
+
+border-radius:999px;
+
+
+}
+
+/* =========================================
+SIDEBAR
+========================================= */
+
+.sidebar{
+
+
+grid-area:sidebar;
+
+display:flex;
+
+flex-direction:column;
+
+gap:1rem;
+
+
+}
+
+/* =========================================
+PANELES
+========================================= */
+
+.control-panel{
+
+
+padding:1.25rem;
+
+border-radius:24px;
+
+
+}
+
+.control-panel h2{
+
+
+margin-bottom:1rem;
+
+
+}
+
+.control-panel fieldset{
+
+
+border:none;
+
+display:flex;
+
+flex-direction:column;
+
+gap:.75rem;
+
+
+}
+
+.control-panel legend{
+
+
+margin-bottom:.75rem;
+
+
+}
+
+.control-panel label{
+
+
+padding:1rem;
+
+border-radius:16px;
+
+cursor:pointer;
+
+display:block;
+
+
+}
+
+/* =========================================
+BENEFICIOS
+========================================= */
+
+.quick-info{
+
+
+padding:1.25rem;
+
+border-radius:24px;
+
+
+}
+
+.quick-info h2{
+
+
+margin-bottom:1rem;
+
+
+}
+
+.quick-info ul{
+
+
+display:flex;
+
+flex-direction:column;
+
+gap:.75rem;
+
+
+}
+
+.quick-info li{
+
+
+padding:.9rem;
+
+border-radius:14px;
+
+
+}
+
+/* =========================================
+VEHÍCULO
+========================================= */
+
+.vehicle-area{
+
+
+grid-area:vehicle;
+
+display:flex;
+
+flex-direction:column;
+
+gap:1rem;
+
+padding:1.5rem;
+
+border-radius:28px;
+
+
+}
+
+/* =========================================
+HEADER VEHÍCULO
+========================================= */
+
+.vehicle-header{
+
+
+text-align:center;
+
+
+}
+
+.vehicle-header h2{
+
+
+margin-bottom:.5rem;
+
+
+}
+
+/* =========================================
+DISPLAY
+========================================= */
+
+.vehicle-display{
+
+
+flex:1;
+
+min-height:520px;
+
+display:grid;
+
+place-items:center;
+
+position:relative;
+
+overflow:hidden;
+
+border-radius:24px;
+
+
+}
+
+/* =========================================
+GRID OVERLAY
+========================================= */
+
+.vehicle{
+
+
+grid-area:1 / 1;
+
+max-height:520px;
+
+object-fit:contain;
+
+
+}
+
+/* =========================================
+STATUS
+========================================= */
+
+.vehicle-status{
+
+
+display:grid;
+
+grid-template-columns:
+
+    repeat(
+        auto-fit,
+        minmax(180px,1fr)
+    );
+
+gap:1rem;
+
+
+}
+
+.vehicle-status article{
+
+
+padding:1rem;
+
+border-radius:18px;
+
+text-align:center;
+
+
+}
+
+.vehicle-status h3{
+
+
+margin-bottom:.5rem;
+
+
+}
+
+/* =========================================
+COTIZACIÓN
+========================================= */
+
+.quote-panel{
+
+
+grid-area:quote;
+
+display:flex;
+
+
+}
+
+.quote-card{
+
+
+width:100%;
+
+display:flex;
+
+flex-direction:column;
+
+gap:1rem;
+
+padding:1.5rem;
+
+border-radius:28px;
+
+
+}
+
+.quote-card h2{
+
+
+text-align:center;
+
+
+}
+
+/* =========================================
+DETALLES
+========================================= */
+
+.quote-card dl{
+
+
+display:flex;
+
+flex-direction:column;
+
+gap:.8rem;
+
+
+}
+
+.quote-card dl div{
+
+
+display:flex;
+
+justify-content:space-between;
+
+
+}
+
+/* =========================================
+INCLUYE
+========================================= */
+
+.quote-highlight{
+
+
+padding:1rem;
+
+border-radius:18px;
+
+
+}
+
+.quote-highlight h3{
+
+
+margin-bottom:.75rem;
+
+
+}
+
+.quote-highlight ul{
+
+
+display:flex;
+
+flex-direction:column;
+
+gap:.5rem;
+
+
+}
+
+/* =========================================
+PRECIO
+========================================= */
+
+.price-box{
+
+
+margin-top:auto;
+
+min-height:90px;
+
+display:grid;
+
+place-items:center;
+
+border-radius:20px;
+
+
+}
+
+/* =========================================
+ESTADO
+========================================= */
+
+.quote-status{
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:.75rem;
+
+padding:1rem;
+
+border-radius:16px;
+
+
+}
+
+.status-indicator{
+
+
+width:12px;
+
+height:12px;
+
+border-radius:50%;
+
+
+}
+
+/* =========================================
+PALETA
+========================================= */
+
+.palette{
+
+
+grid-area:palette;
+
+padding:1.5rem;
+
+border-radius:28px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:1rem;
+
+
+}
+
+.palette header{
+
+
+flex-basis:100%;
+
+text-align:center;
+
+
+}
+
+/* =========================================
+SWATCHES
+========================================= */
+
+.paint-swatch{
+
+
+flex:0 0 auto;
+
+
+}
+
+

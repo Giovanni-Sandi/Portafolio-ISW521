@@ -1,0 +1,397 @@
+/* =========================================
+INTERACTIONS.CSS
+Auto Style CR
+========================================= */
+
+/* =========================================
+RADIOS ACCESIBLES
+========================================= */
+
+input[type="radio"]{
+
+
+position:absolute;
+
+left:-9999px;
+
+
+}
+
+/* =========================================
+FOCUS VISIBLE
+========================================= */
+
+label{
+
+
+transition:
+    transform .3s ease,
+    border-color .3s ease,
+    box-shadow .3s ease;
+
+
+}
+
+label:hover{
+
+
+transform:translateY(-2px);
+
+
+}
+
+/* =========================================
+TEMA ACTIVO
+========================================= */
+
+#theme-dark:checked
+~ .showroom-grid
+label[for="theme-dark"],
+
+#theme-light:checked
+~ .showroom-grid
+label[for="theme-light"]{
+
+
+border-color:var(--accent);
+
+box-shadow:var(--shadow-glow);
+
+
+}
+
+/* =========================================
+MODELO ACTIVO
+========================================= */
+
+#corolla:checked
+~ .showroom-grid
+label[for="corolla"],
+
+#hilux:checked
+~ .showroom-grid
+label[for="hilux"]{
+
+
+border-color:var(--accent);
+
+box-shadow:var(--shadow-glow);
+
+
+}
+
+/* =========================================
+ÁNGULO ACTIVO
+========================================= */
+
+#front:checked
+~ .showroom-grid
+label[for="front"],
+
+#side:checked
+~ .showroom-grid
+label[for="side"],
+
+#rear:checked
+~ .showroom-grid
+label[for="rear"]{
+
+
+border-color:var(--accent);
+
+box-shadow:var(--shadow-glow);
+
+
+}
+
+/* =========================================
+GRID OVERLAY
+========================================= */
+
+.vehicle{
+
+
+opacity:0;
+
+visibility:hidden;
+
+transition:
+    opacity .4s ease,
+    transform .4s ease;
+
+transform:scale(.96);
+
+
+}
+
+/* =========================================
+COROLLA
+========================================= */
+
+#corolla:checked
+~ .showroom-grid
+.vehicle.corolla.front{
+
+
+opacity:1;
+
+visibility:visible;
+
+transform:scale(1);
+
+
+}
+
+/* =========================================
+HILUX
+========================================= */
+
+#hilux:checked
+~ .showroom-grid
+.vehicle.hilux.front{
+
+
+opacity:1;
+
+visibility:visible;
+
+transform:scale(1);
+
+
+}
+
+/* =========================================
+PRECIOS
+========================================= */
+
+.corolla-price,
+.hilux-price{
+
+
+display:none;
+
+
+}
+
+#corolla:checked
+~ .showroom-grid
+.corolla-price{
+
+
+display:block;
+
+
+}
+
+#hilux:checked
+~ .showroom-grid
+.hilux-price{
+
+
+display:block;
+
+
+}
+
+/* =========================================
+MODELO ACTIVO
+========================================= */
+
+.model-corolla,
+.model-hilux{
+
+
+display:none;
+
+
+}
+
+#corolla:checked
+~ .showroom-grid
+.model-corolla{
+
+
+display:block;
+
+
+}
+
+#hilux:checked
+~ .showroom-grid
+.model-hilux{
+
+
+display:block;
+
+
+}
+
+/* =========================================
+COLORES
+========================================= */
+
+#color-red:checked
+~ .showroom-grid{
+
+
+--car-filter:
+    hue-rotate(0deg)
+    saturate(1.4);
+
+
+}
+
+#color-black:checked
+~ .showroom-grid{
+
+
+--car-filter:
+    grayscale(1)
+    brightness(.45);
+
+
+}
+
+#color-white:checked
+~ .showroom-grid{
+
+
+--car-filter:
+    grayscale(.8)
+    brightness(1.35);
+
+
+}
+
+#color-blue:checked
+~ .showroom-grid{
+
+
+--car-filter:
+    hue-rotate(180deg)
+    saturate(1.8);
+
+
+}
+
+#color-green:checked
+~ .showroom-grid{
+
+
+--car-filter:
+    hue-rotate(90deg)
+    saturate(1.8);
+
+
+}
+
+#color-orange:checked
+~ .showroom-grid{
+
+
+--car-filter:
+    hue-rotate(330deg)
+    saturate(1.8);
+
+
+}
+
+/* =========================================
+FILTRO VEHÍCULO
+========================================= */
+
+.vehicle{
+
+
+filter:
+    var(--car-filter)
+    drop-shadow(
+        0 25px 45px rgba(0,0,0,.25)
+    );
+
+
+}
+
+/* =========================================
+SWATCH ACTIVO
+========================================= */
+
+#color-red:checked
+~ .showroom-grid
+.paint-swatch.red,
+
+#color-black:checked
+~ .showroom-grid
+.paint-swatch.black,
+
+#color-white:checked
+~ .showroom-grid
+.paint-swatch.white,
+
+#color-blue:checked
+~ .showroom-grid
+.paint-swatch.blue,
+
+#color-green:checked
+~ .showroom-grid
+.paint-swatch.green,
+
+#color-orange:checked
+~ .showroom-grid
+.paint-swatch.orange{
+
+
+transform:scale(1.15);
+
+border-color:white;
+
+
+}
+
+/* =========================================
+HOVER VEHÍCULO
+========================================= */
+
+.vehicle-display:hover .vehicle{
+
+
+transform:
+    scale(1.03)
+    translateY(-4px);
+
+
+}
+
+/* =========================================
+MODO CLARO
+========================================= */
+
+#theme-light:checked
+~ .showroom-grid{
+
+
+color:#111;
+
+
+}
+
+/* =========================================
+TRANSICIONES
+========================================= */
+
+.showroom-grid,
+.main-header,
+.control-panel,
+.quick-info,
+.vehicle-area,
+.quote-card,
+.palette{
+
+
+transition:
+    background-color .4s ease,
+    border-color .4s ease,
+    color .4s ease;
+
+
+}

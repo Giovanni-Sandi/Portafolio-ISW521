@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Auto Style CR | Inclusive Paint Experience</title>
+
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/palette.css">
+<link rel="stylesheet" href="css/interactions.css">
+
+
+</head>
+
+<body>
+
+
+<!-- ===================================== -->
+<!-- RADIOS GLOBALES -->
+<!-- ===================================== -->
+
+<!-- Tema -->
+<input type="radio" name="theme" id="theme-dark" checked>
+<input type="radio" name="theme" id="theme-light">
+
+<!-- Modelo -->
+<input type="radio" name="model" id="corolla" checked>
+<input type="radio" name="model" id="hilux">
+
+<!-- Ángulo -->
+<input type="radio" name="angle" id="front" checked>
+<input type="radio" name="angle" id="side">
+<input type="radio" name="angle" id="rear">
+
+<!-- Colores -->
+<input type="radio" name="color" id="color-red" checked>
+<input type="radio" name="color" id="color-black">
+<input type="radio" name="color" id="color-white">
+<input type="radio" name="color" id="color-blue">
+<input type="radio" name="color" id="color-green">
+<input type="radio" name="color" id="color-orange">
+
+<!-- ===================================== -->
+<!-- SHOWROOM -->
+<!-- ===================================== -->
+
+<main class="showroom-grid">
+
+    <!-- ===================================== -->
+    <!-- HEADER -->
+    <!-- ===================================== -->
+
+    <header class="main-header">
+
+        <div class="brand">
+
+            <span class="brand-mark">
+                AS
+            </span>
+
+            <div>
+
+                <h1>
+                    Auto Style CR
+                </h1>
+
+                <p>
+                    Inclusive Paint Experience
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="header-badges">
+
+            <span>
+                ✓ Navegación por teclado
+            </span>
+
+            <span>
+                ✓ 100% CSS
+            </span>
+
+            <span>
+                ✓ Diseño inclusivo
+            </span>
+
+        </div>
+
+    </header>
+
+    <!-- ===================================== -->
+    <!-- SIDEBAR -->
+    <!-- ===================================== -->
+
+    <aside class="sidebar">
+
+        <!-- APARIENCIA -->
+
+        <section class="control-panel">
+
+            <h2>
+                Apariencia
+            </h2>
+
+            <fieldset>
+
+                <legend>
+                    Seleccione un tema
+                </legend>
+
+                <label for="theme-dark">
+                    🌙 Modo Oscuro
+                </label>
+
+                <label for="theme-light">
+                    ☀️ Modo Claro
+                </label>
+
+            </fieldset>
+
+        </section>
+
+        <!-- MODELO -->
+
+        <section class="control-panel">
+
+            <h2>
+                Modelo Toyota
+            </h2>
+
+            <fieldset>
+
+                <legend>
+                    Seleccione un vehículo
+                </legend>
+
+                <label for="corolla">
+                    Toyota Corolla GR
+                </label>
+
+                <label for="hilux">
+                    Toyota Hilux 4x4
+                </label>
+
+            </fieldset>
+
+        </section>
+
+        <!-- ÁNGULO -->
+
+        <section class="control-panel">
+
+            <h2>
+                Vista
+            </h2>
+
+            <fieldset>
+
+                <legend>
+                    Seleccione un ángulo
+                </legend>
+
+                <label for="front">
+                    Frente
+                </label>
+
+                <label for="side">
+                    Perfil Lateral
+                </label>
+
+                <label for="rear">
+                    Parte Trasera
+                </label>
+
+            </fieldset>
+
+        </section>
+
+        <!-- BENEFICIOS -->
+
+        <section class="quick-info">
+
+            <h2>
+                Beneficios
+            </h2>
+
+            <ul>
+
+                <li>
+                    Pintura certificada
+                </li>
+
+                <li>
+                    Protección UV
+                </li>
+
+                <li>
+                    Secado rápido
+                </li>
+
+                <li>
+                    Control de calidad
+                </li>
+
+            </ul>
+
+        </section>
+
+    </aside>
+
+    <!-- ===================================== -->
+    <!-- VEHÍCULO -->
+    <!-- ===================================== -->
+
+    <section class="vehicle-area">
+
+        <header class="vehicle-header">
+
+            <h2>
+                Visualizador Interactivo
+            </h2>
+
+            <p>
+                Seleccione modelo, vista y color.
+            </p>
+
+        </header>
+
+        <figure class="vehicle-display">
+
+            <!-- Corolla -->
+
+            <img
+                src="img/corolla-front.png"
+                alt="Toyota Corolla GR vista frontal"
+                class="vehicle corolla front">
+
+            <img
+                src="img/corolla-side.png"
+                alt="Toyota Corolla GR vista lateral"
+                class="vehicle corolla side">
+
+            <img
+                src="img/corolla-rear.png"
+                alt="Toyota Corolla GR vista trasera"
+                class="vehicle corolla rear">
+
+            <!-- Hilux -->
+
+            <img
+                src="img/hilux-front.png"
+                alt="Toyota Hilux vista frontal"
+                class="vehicle hilux front">
+
+            <img
+                src="img/hilux-side.png"
+                alt="Toyota Hilux vista lateral"
+                class="vehicle hilux side">
+
+            <img
+                src="img/hilux-rear.png"
+                alt="Toyota Hilux vista trasera"
+                class="vehicle hilux rear">
+
+        </figure>
+
+        <section class="vehicle-status">
+
+            <article>
+
+                <h3>
+                    Modelo
+                </h3>
+
+                <p class="model-corolla">
+                    Toyota Corolla GR
+                </p>
+
+                <p class="model-hilux">
+                    Toyota Hilux 4x4
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>
+                    Estado
+                </h3>
+
+                <p>
+                    Listo para cotización
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>
+                    Garantía
+                </h3>
+
+                <p>
+                    12 meses
+                </p>
+
+            </article>
+
+        </section>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- COTIZACIÓN -->
+    <!-- ===================================== -->
+
+    <aside class="quote-panel">
+
+        <section class="quote-card">
+
+            <h2>
+                Cotización
+            </h2>
+
+            <dl>
+
+                <div>
+                    <dt>Servicio</dt>
+                    <dd>Pintura Completa</dd>
+                </div>
+
+                <div>
+                    <dt>Preparación</dt>
+                    <dd>Incluida</dd>
+                </div>
+
+                <div>
+                    <dt>Protección UV</dt>
+                    <dd>Incluida</dd>
+                </div>
+
+                <div>
+                    <dt>Garantía</dt>
+                    <dd>12 meses</dd>
+                </div>
+
+            </dl>
+
+            <section class="quote-highlight">
+
+                <h3>
+                    Incluye
+                </h3>
+
+                <ul>
+
+                    <li>Preparación de superficie</li>
+                    <li>Aplicación profesional</li>
+                    <li>Pulido final</li>
+                    <li>Garantía escrita</li>
+
+                </ul>
+
+            </section>
+
+            <div class="price-box">
+
+                <span class="corolla-price">
+                    ₡475.000
+                </span>
+
+                <span class="hilux-price">
+                    ₡620.000
+                </span>
+
+            </div>
+
+            <div class="quote-status">
+
+                <span class="status-indicator"></span>
+
+                <p>
+                    Cotización lista para revisión
+                </p>
+
+            </div>
+
+        </section>
+
+    </aside>
+
+    <!-- ===================================== -->
+    <!-- PALETA -->
+    <!-- ===================================== -->
+
+    <section
+        class="palette"
+        aria-label="Paleta de colores">
+
+        <header>
+
+            <h2>
+                Paleta Premium
+            </h2>
+
+            <p>
+                Seleccione un acabado.
+            </p>
+
+        </header>
+
+        <label
+            for="color-red"
+            class="paint-swatch red"
+            tabindex="0"
+            aria-label="Rojo Racing">
+        </label>
+
+        <label
+            for="color-black"
+            class="paint-swatch black"
+            tabindex="0"
+            aria-label="Negro Ónix">
+        </label>
+
+        <label
+            for="color-white"
+            class="paint-swatch white"
+            tabindex="0"
+            aria-label="Blanco Perla">
+        </label>
+
+        <label
+            for="color-blue"
+            class="paint-swatch blue"
+            tabindex="0"
+            aria-label="Azul Eléctrico">
+        </label>
+
+        <label
+            for="color-green"
+            class="paint-swatch green"
+            tabindex="0"
+            aria-label="Verde Esmeralda">
+        </label>
+
+        <label
+            for="color-orange"
+            class="paint-swatch orange"
+            tabindex="0"
+            aria-label="Naranja Sunset">
+        </label>
+
+    </section>
+
+</main>
+
+
+</body>
+
+</html>
+
